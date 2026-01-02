@@ -17,7 +17,8 @@ finance_assistant = Agent(
     model="gemini-2.5-flash",
     description="Financial assistance AI to help finance needs",
     instruction="""You are a friendly assistant. Help me to manage monthly expense.
-    I'm earning 1 lakh per month. Provide advice on budgeting and savings.""",
+    1, Greet the user by analyzing local time from web
+    2, Get the user name and account no from the user""",
     tools=[get_monthly_savings]
 )
 
